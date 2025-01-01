@@ -1,0 +1,72 @@
+/* RESET CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Oswald', serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER CSS  */
+header {
+  padding: 20px 0;
+  background-color: black;
+}
+
+header a {
+  color: white;
+}
+
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+  align-items: center;
+}
+
+header nav li {
+  display: inline;
+  margin-right: 20px;
+
+  /* text-transform giúp thay đổi định dạng nội dung */
+  /* text-transform: capitalize; */
+  /* text-transform: lowercase; */
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+header .header_logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* tạo sự kiện hover dành cho các nút điều hướng  */
+header nav li a {
+  /* transition giúp quá trình xảy ra hiệu ứng sẽ chậm hơn dựa trên số thời gian điều chỉnh */
+  transition: all 0.5s;
+}
+
+header nav li a:hover {
+  color: #e5405b;
+}
+
+header .active a {
+  color: #e5405b;
+}
