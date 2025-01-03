@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -24,10 +24,20 @@ ul {
   list-style: none;
 }
 
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
 /* HEADER CSS  */
 header {
   padding: 20px 0;
-  background-color: black;
+  /* background-color: black; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.288);
 }
 
 header a {
@@ -43,7 +53,7 @@ header .header_content {
 
 header nav li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 40px;
 
   /* text-transform giúp thay đổi định dạng nội dung */
   /* text-transform: capitalize; */
@@ -69,4 +79,65 @@ header nav li a:hover {
 
 header .active a {
   color: #e5405b;
+}
+
+/* BANNER */
+.banner {
+  height: 80vh;
+  background-image: url(./../img/home_slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* .banner_content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+} */
+
+.banner_content p {
+  font-size: 25px;
+}
+
+.banner_content h1 {
+  font-size: 75px;
+  line-height: 90px;
+}
+
+.banner_content button {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: #e62b4a;
+  color: white;
+  border: 1px solid #e62b4a;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.banner_content button:hover {
+  background-color: #af2239;
+}
+
+/* SERVICE */
+.service {
+  background-color: pink;
+  color: white;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.service_title .sub_title {
+  color: #e62b4a;
+  font-weight: 300;
 }
