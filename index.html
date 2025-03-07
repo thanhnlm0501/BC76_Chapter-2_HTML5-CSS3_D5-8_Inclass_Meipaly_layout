@@ -194,7 +194,14 @@
     </section>
 
     <!-- BLOG  -->
-    <section class="blog"></section>
+    <section class="blog">
+      <div class="container">
+        <!-- title -->
+        <div class="blog_title"></div>
+        <!-- content -->
+        <div class="blog_content"></div>
+      </div>
+    </section>
 
     <!-- NUMBER -->
     <section class="number"></section>
@@ -207,6 +214,12 @@
 
     <!-- FOOTER -->
     <footer></footer>
+
+    <!-- Demo before and after -->
+    <!-- <div class="demo_before_after">
+      <p>tôi</p>
+    </div> -->
+
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <!-- jQuery JS -->
@@ -233,7 +246,7 @@
 
     <script>
       $(document).ready(function () {
-        $('.service_carousel').slick({
+        $(".service_carousel").slick({
           // khi gặp boolean truyền 2 giá trị true(đúng) và false(sai)
           // autoplay: true,
           // autoplaySpeed: 1000,
@@ -243,7 +256,7 @@
           // số lượng slides sẽ hiển thị
           slidesToShow: 5,
           // số lượng slide sẽ chuyển tới khi click vào hoặc tự động đổi
-          slidesToScroll: 5,
+          slidesToScroll: 2,
           // speed tốc độ chuyển đổi slide
           // speed: 30000,
         });
