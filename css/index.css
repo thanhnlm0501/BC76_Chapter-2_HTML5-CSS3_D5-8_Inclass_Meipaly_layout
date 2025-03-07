@@ -7,7 +7,7 @@
 
 /* GLOBAL */
 body {
-  font-family: 'Oswald', serif;
+  font-family: "Oswald", serif;
 }
 
 .container {
@@ -131,7 +131,7 @@ header .active a {
 
 /* SERVICE */
 .service {
-  background-color: pink;
+  background-color: black;
   color: white;
   padding: 90px 0;
   text-align: center;
@@ -140,4 +140,81 @@ header .active a {
 .service_title .sub_title {
   color: #e62b4a;
   font-weight: 300;
+}
+
+.service .item_bg {
+  background-color: white;
+  color: #888888;
+  padding: 50px;
+  position: relative;
+}
+
+.service .service_item {
+  padding: 0 15px;
+}
+
+.service .item_bg i {
+  font-size: 50px;
+}
+
+.service .item_bg p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.service_item .item_bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* height: 100%; */
+  width: 5px;
+  background-color: #e62b4a;
+  /* opacity: 0; */
+  /* background-color: white; */
+  /* display: none; */
+  /* width: 0; */
+  height: 0;
+  transition: all 0.5s;
+}
+
+.service_item .item_bg:hover::before {
+  height: 100%;
+}
+
+/* Demo before and after */
+/* Khi sử dụng before và after luôn có thuộc tính content */
+/* .demo_before_after p::before {
+  content: "Hôm nay ";
+  font-size: 30px;
+  background-color: red;
+}
+
+.demo_before_after p::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: blue;
+  right: 0;
+  top: 0;
+}
+
+.demo_before_after p {
+  height: 500px;
+  background-color: orange;
+  position: relative;
+} */
+
+.service .slick-dots li button:before {
+  font-size: 15px;
+  color: white;
+}
+
+.service .slick-dots .slick-active button::before {
+  color: #e5405b;
+}
+
+.service .slick-dots {
+  bottom: -40px;
 }
