@@ -218,3 +218,13 @@ header .active a {
 .service .slick-dots {
   bottom: -40px;
 }
+
+/* BLOG CSS */
+.blog .blog_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blog .blog_content img {
+  width: 100%;
+}
